@@ -1,0 +1,36 @@
+/* Thumbnail */
+
+.e2-text-thumbnail {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+.e2-text-thumbnail .e2-note-thumbnail-wrapper {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    width: fill-available;
+
+    padding-bottom: 56.25%;
+}
+.e2-text-thumbnail .e2-note-thumbnail-wrapper a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    border: 1px solid var(--linkUnderlineColor);
+}
+.e2-text-thumbnail .e2-note-thumbnail-wrapper a.hover,
+.e2-text-thumbnail .e2-note-thumbnail-wrapper a:hover {
+    border-color: var(--hoverColor)
+}
+.e2-text-thumbnail .e2-note-thumbnail-wrapper img {
+    object-fit: cover;
+
+    height: 100%;
+    width: 100%;
+}
