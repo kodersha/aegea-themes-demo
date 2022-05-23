@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 .e2-text-thumbnail .e2-note-thumbnail-wrapper a {
-    display: block;
+    display: inline-block;
 
     border: 1px solid var(--linkUnderlineColor);
 }
@@ -20,5 +20,5 @@
 .e2-text-thumbnail .e2-note-thumbnail-wrapper img {
     display: block;
 
-    width: 100%;
+    max-width: 100%;
 }
