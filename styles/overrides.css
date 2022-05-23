@@ -7,20 +7,9 @@
 .e2-text-thumbnail .e2-note-thumbnail-wrapper {
     position: relative;
     overflow: hidden;
-
-    width: 100%;
-    width: -moz-available;
-    width: -webkit-fill-available;
-    width: fill-available;
-
-    padding-bottom: 56.25%;
 }
 .e2-text-thumbnail .e2-note-thumbnail-wrapper a {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    top: 0;
+    display: block;
 
     border: 1px solid var(--linkUnderlineColor);
 }
@@ -29,8 +18,7 @@
     border-color: var(--hoverColor)
 }
 .e2-text-thumbnail .e2-note-thumbnail-wrapper img {
-    object-fit: cover;
+    display: block;
 
-    height: 100%;
     width: 100%;
 }
