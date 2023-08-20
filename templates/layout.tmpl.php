@@ -3,7 +3,7 @@
 <div class="common">
     <div class="flag">
         <?php _X ('header-pre') ?>
-        
+
         <div class="header-content">
             <div class="header-description">
                 <div class="title">
@@ -14,15 +14,9 @@
                         <div class="logo">
                             <?php _T ('user-picture') ?>
                         </div>
-                        <h1>
-                            <?= _A ('<a href="' . $content['blog']['href'] . '"><span id="e2-blog-title">' . $content['blog']['title'] . '</span></a>') ?>
-                        </h1>
-
+                        <h1><?= _A ('<a href="' . $content['blog']['href'] . '"><span id="e2-blog-title">' . $content['blog']['title'] . '</span></a>') ?></h1>
                     </div>
-
-                    <?php if ($content['class'] == 'frontpage') { ?>
-                        <div id="e2-blog-description"><?= $content['blog']['subtitle'] ?></div>
-                    <?php } ?>
+                    <div id="e2-blog-description"><?= $content['blog']['subtitle'] ?></div>
                 </div>
             </div>
 
@@ -34,17 +28,17 @@
                 </span>
 
                 <?php if ($content['class'] != 'found') { ?>
-                <?php _T_FOR ('form-search') ?>
+                    <?php _T ('search-icon') ?>
                 <?php } ?>
             </div>
         </div>
 
+        <?php _T ('main-menu') ?>
         <?php _X ('header-post') ?>
     </div>
 
     <div class="content">
         <?php _T ('heading') ?>
-        <?php _T ('theme-preview') ?>
         <?php _T ('message') ?>
         <?php _T ('welcome') ?>
         <?php _T ('unavailable') ?>
@@ -57,7 +51,6 @@
         <?php _T ('pages') ?>
         <?php _T ('comments') ?>
         <?php _T ('popular') ?>
-        <?php _T ('tags-menu') ?>
         <?php _T ('unsubscribe') ?>
         <?php _T ('form') ?>
     </div>
