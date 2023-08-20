@@ -1,0 +1,21 @@
+/* Custom font */
+
+@font-face {
+    font-family: 'TildaSans';
+    src: url('../fonts/tildasans/TildaSans-VF.ttf') format('truetype');
+    src: url('../fonts/tildasans/TildaSans-VF.woff') format('woff2'),
+        url('../fonts/tildasans/TildaSans-VF.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+:root {
+    /* Main font */
+    --mainFontFamily: 'TildaSans', system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    /* Note font */
+    --noteMainFontFamily: inherit;
+
+    /* Small font */
+    --smallFontFamily: inherit;
+}

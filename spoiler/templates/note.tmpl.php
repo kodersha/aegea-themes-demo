@@ -126,10 +126,10 @@
 
         <?php // TEXT // ?>
 
-        <?php // Если пост избранный // ?>
+        <?php // IF NOTE FAVOURITE // ?>
         <?php if ($note['favourite?'] and $content['class'] !== 'note') { ?>
             <div class="e2-note-text e2-text">
-                <?php // Старт отображения превью // ?>
+                <?php // Preview image start // ?>
                 <?php if ($note['og-images']) { ?>
                     <?php $i = 0; ?>
                     <?php foreach ($note['og-images'] as $image): ?>
@@ -137,26 +137,26 @@
                             <div class="e2-text-thumbnail">
                                 <div class="e2-note-thumbnail-wrapper">
                                     <a href="<?= $note['href'] ?>">
-                                        <img src="<?= $image ?>"/>
+                                        <img loading="lazy" src="<?= $image ?>"/>
                                     </a>
                                 </div>
                             </div>
                         <?php } ?>
                     <?php endforeach ?>
                 <?php } ?>
-                <?php // Конец отображения превью // ?>
+                <?php // Preview image end // ?>
 
-                <?php // Старт отображения сокращенного текста // ?>
+                <?php // Short text start // ?>
                 <?php if (array_key_exists ('snippet-text', $note) and $note['snippet-text'] != '') { ?>
                     <p><?= $note['snippet-text'] ?></p>
                 <?php } ?>
-                <?php // Конец отображения сокращенного текста // ?>
+                <?php // Short text end // ?>
 
-                <?php // Старт вывода ссылки // ?>
+                <?php // Link start // ?>
                 <p class="e2-text-readmore"><a href="<?= $note['href'] ?>"><?= _S ('nm--read-next') ?> &rarr;</a></p>
-                <?php // Конец вывода ссылки // ?>
+                <?php // Link end // ?>
             </div>
-        <?php // Если пост не избранный // ?>
+        <?php // IF DEFAULT NOTE // ?>
         <?php } else { ?>
             <?php if (array_key_exists ('text', $note) and $note['text'] != '') { ?>
                 <div class="e2-note-text e2-text">
